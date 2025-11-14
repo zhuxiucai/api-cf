@@ -1,0 +1,28 @@
+# Wrangler 配置文件 (位于项目根目录)
+
+# 你的 Worker 的名字，必须和 Cloudflare 仪表盘上的名字完全一样
+name = "api-cf"
+
+# 你的主脚本文件。现在需要包含从根目录开始的完整路径
+main = "cfapi/_worker.js"
+
+# 兼容性日期，确保 Worker 运行时环境的稳定性
+compatibility_date = "2025-09-09"
+
+# 指定这是一个 ES Module 格式的 Worker
+[build]
+command = "" # 我们不需要构建步骤，所以留空
+
+#Cloudflare自带的日志功能
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
+
+[[d1_databases]]
+binding = "DB"                  # 这是您代码中 `env.DB` 的名字，必须保持一致
+database_name = "api-rotation-db" # 数据库的名称，可自定义
+database_id = "b2bb615c-91f6-407c-b9a0-7ef50d14252d" # <--- 粘贴您复制的数据库 ID
+
+[[analytics_engine_datasets]]
+binding = "LOGS"                # 这是您代码中 `env.LOGS` 的名字，必须与要求一致
+dataset = "ai_gateway_logs"     # 数据集的名称，可自定义
