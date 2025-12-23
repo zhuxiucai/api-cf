@@ -1,3 +1,5 @@
+first commit from github to trigger 
+cloudflare auto build
 https://github.com/dogchild/api-cf
 
 # 简易Cloudflare大模型API反代工具
