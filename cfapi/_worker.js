@@ -1,8 +1,10 @@
-/**
+
+
+/** https://github.com/dogchild/api-cf
  * =================================================================================
  * All-in-One AI Gateway Worker with Analytics Engine Logging
  * =================================================================================
- *
+ * 
  * This version integrates with Cloudflare Analytics Engine to log key metrics
  * for every API request, providing powerful, free observability.
  *
