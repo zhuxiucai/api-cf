@@ -20,8 +20,8 @@ head_sampling_rate = 1 # optional. default = 1.
 
 [[d1_databases]]
 binding = "DB"                  # 这是您代码中 `env.DB` 的名字，必须保持一致
-database_name = "api-rotation-db" # 数据库的名称，可自定义
-database_id = "a45713e8-55e5-4cbe-ac82-86954d33a7e6" # <--- 粘贴您复制的数据库 ID
+database_name = "api-rotation-db" # 数据库的名称
+database_id = "b2bb615c-91f6-407c-b9a0-7ef50d14252d"      # 您的数据库ID
 
 [[analytics_engine_datasets]]
 binding = "LOGS"                # 这是您代码中 `env.LOGS` 的名字，必须与要求一致
