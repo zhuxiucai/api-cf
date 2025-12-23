@@ -1,3 +1,5 @@
+https://github.com/dogchild/api-cf
+
 # 简易Cloudflare大模型API反代工具
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dogchild/api-cf)
